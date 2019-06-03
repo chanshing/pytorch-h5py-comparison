@@ -10,6 +10,7 @@ We are interested in fast loading of compressed datasets in Pytorch.
 
 ## Results
 
+### Time to loop through the dataset once, using a batch size of 8 and random sampling
 ![comparison](https://github.com/chanshing/pytorch-h5py-comparison/blob/master/comparison.png)
 
 - Machine: Core i7 8th gen, 16GB RAM.

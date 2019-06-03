@@ -53,7 +53,9 @@ if __name__ == '__main__':
         args.nsample, args.ndim = data.shape
     else:
         print("generating fake data")
-        data = numpy.random.randn(args.nsample, args.ndim)  # note: random data cannot be compressed!
+        # note: random data cannot be compressed!
+        # use a proper dataset to test compression
+        data = numpy.random.randn(args.nsample, args.ndim)
 
     if args.dataname is None:
         args.dataname = '{}x{}'.format(args.nsample, args.ndim)

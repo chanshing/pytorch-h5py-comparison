@@ -33,7 +33,7 @@ see [this answer](https://stackoverflow.com/a/27713489/3250500).
 - To clear cache for testing purposes,
     - Linux: `sudo sh -c 'free && sync && echo 3 > /proc/sys/vm/drop_caches && free'`.
     - Windows: use [RAMMap](https://docs.microsoft.com/en-us/sysinternals/downloads/rammap).
-- To check HDF5 installation, `h5cc --showconfig`
+- To check HDF5 installation, `h5cc -showconfig`
 - [This nice benchmark](http://alimanfoo.github.io/2016/09/21/genotype-compression-benchmark.html) of compressors performed on genotype datasets.
 - [Fine-tuning](http://python-blosc.blosc.org/tutorial.html#fine-tuning-compression-parameters) options for Blosc.
 - Incrementally build HDF datasets: https://stackoverflow.com/a/25656175/3250500

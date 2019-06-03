@@ -35,7 +35,7 @@ if __name__ == '__main__':
     torch.manual_seed(args.seed)
 
     dataloader = data.DataLoader(H5Dataset(args.dataname, args.prefix),
-        batch_size=args.batch_size, num_workers=args.num_workers, shuffle=args.noshuffle)
+        batch_size=args.batch_size, num_workers=args.num_workers, shuffle=True)
 
     before = time.time()
     trash = 0.
